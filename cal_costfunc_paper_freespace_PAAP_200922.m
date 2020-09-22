@@ -1,7 +1,8 @@
 %----------------------------------------------
 %   TR painting中
-%   重建ExPhase时，观察其幅度，为均一分布
-%   重建ExAmplitude时，观察其相位，为同向分布
+%   paap 意思是 P 的 A，A 的 P。
+%   验证freespace中重建相位源时，幅度分布异同，并计算代价函数
+%   验证freespace中重建幅度源时，相位分布异同，并计算代价函数
 %   Date:2020.Sep.10th
 %   Author:cschen
 %----------------------------------------------
@@ -12,7 +13,7 @@ feature('DefaultCharacterSet','UTF-8');
 tic
 disp('data loading')
 %%  load 
-oripath='C:\Users\CCS\Desktop\rebuild_2dplane\';
+oripath='E:\TRpainting\CostFuncData\20200922_paper_final_data\freespace_rebuild\';
 Phase.original = sfunc_dataprepro_A(fullfile(oripath,'F_original_z=0_e-field (f=10) [PhasePeaks].txt'));
 
 Phase.num1 = sfunc_dataprepro_A(fullfile(oripath,'Phase\zhengli\paper1.txt'));

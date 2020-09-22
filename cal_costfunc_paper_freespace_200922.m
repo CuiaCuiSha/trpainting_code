@@ -11,8 +11,7 @@ feature('DefaultCharacterSet','UTF-8');
 tic
 disp('data loading')
 %%  load 
-
-oripath='C:\Users\CCS\Desktop\rebuild_2dplane\';
+oripath='E:\TRpainting\CostFuncData\20200922_paper_final_data\freespace_rebuild\';
 Phase.original = sfunc_dataprepro_P(fullfile(oripath,'F_original_z=0_e-field (f=10) [PhasePeaks].txt'));
 Phase.num1 = sfunc_dataprepro_P(fullfile(oripath,'Phase\zhengli\paper1.txt'));
 Phase.num2 = sfunc_dataprepro_P(fullfile(oripath,'Phase\zhengli\paper2.txt'));

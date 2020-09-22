@@ -15,7 +15,7 @@ tic
 disp('data loading')
 %%  load 
 
-oripath='C:\Users\CCS\Desktop\pec_rebuild\';
+oripath='E:\TRpainting\CostFuncData\20200922_paper_final_data\pec_rebuild\';
 
 PecPhase.original = sfunc_dataprepro_A(fullfile(oripath,'F_original_z=0_e-field (f=10) [PhasePeaks].txt'));
 
